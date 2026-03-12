@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "843782249376",
+    "project_id": "minhaappdecarros",
+    "storage_bucket": "minhaappdecarros.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:843782249376:android:d4e31fb635450aa51f62c5",
+        "android_client_info": {
+          "package_name": "br.edu.utfpr.minha_app_decarros"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8o8XEJkgMYVxUb38UNU9N0LCJPr0oQhg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

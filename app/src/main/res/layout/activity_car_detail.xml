@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/imgDetailPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_menu_gallery" />
+    </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Car Name"
+            android:textColor="#333"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editDetailName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: Honda Civic"
+            android:inputType="textCapWords" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Model"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editDetailModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: LXR 2.0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Licence Plate"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editDetailLicence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: ABC-1234"
+            android:inputType="textCapCharacters" />
+
+        <TextView
+            android:id="@+id/labelUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Image URL"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/editDetailImageUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="http://image.com/car.jpg"
+            android:visibility="gone" />
+
+        <fragment
+            android:id="@+id/mapDetail"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp" />
+
+
+        <Button
+            android:id="@+id/btnSaveCar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#4CAF50"
+            android:text="SAVE CAR"
+            android:textColor="#FFF"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>
