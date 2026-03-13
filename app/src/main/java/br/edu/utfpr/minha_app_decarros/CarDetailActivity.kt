@@ -13,7 +13,7 @@ import br.edu.utfpr.minha_app_decarros.databinding.ActivityCarDetailBinding
 import br.edu.utfpr.minha_app_decarros.model.Car
 import br.edu.utfpr.minha_app_decarros.model.Place
 import br.edu.utfpr.minha_app_decarros.Services.CarServices
-import com.google.android.gms.maps.CameraUpdateFactory
+import com.google.android.gms. maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment

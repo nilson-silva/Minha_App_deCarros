@@ -1,12 +1,6 @@
 pluginManagement {
     repositories {
-        google {
-            content {
-                includeGroupByRegex("com\\.android.*")
-                includeGroupByRegex("com\\.google.*")
-                includeGroupByRegex("androidx.*")
-            }
-        }
+        google()
         mavenCentral()
         gradlePluginPortal()
     }
@@ -14,10 +8,11 @@ pluginManagement {
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
-        google()
-        mavenCentral()
+        google()            // <--- OBRIGATÓRIO ESTAR AQUI
+        mavenCentral()      // <--- OBRIGATÓRIO ESTAR AQUI
+        maven { url = java.net.URI.create("https://jitpack.io") }
     }
 }
 
-rootProject.name = "Minha_App_deCarros"
+rootProject.name = "MinhaAppdeCarros"
 include(":app")
