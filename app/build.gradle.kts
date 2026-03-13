@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     id("com.google.gms.google-services")
-
+    id("kotlin-parcelize") // Adicionado para suporte a objetos entre telas
 }
 
 android {
@@ -33,14 +33,13 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
 
-
     buildFeatures {
         viewBinding = true
-        dataBinding = true
     }
 }
 
 dependencies {
+
     implementation(platform("com.google.firebase:firebase-bom:33.4.0"))
     implementation("com.google.firebase:firebase-auth-ktx")
     implementation("com.google.firebase:firebase-storage-ktx")
@@ -54,6 +53,7 @@ dependencies {
     implementation("com.google.android.material:material:1.12.0")
     implementation("androidx.activity:activity-ktx:1.9.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0") // Linha única agora
     implementation(libs.play.services.maps)
 
     testImplementation("junit:junit:4.13.2")

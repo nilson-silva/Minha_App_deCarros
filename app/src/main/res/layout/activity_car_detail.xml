@@ -17,13 +17,22 @@
             app:cardCornerRadius="12dp"
             app:cardElevation="4dp">
 
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnTakePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            android:visibility="gone"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
         <ImageView
             android:id="@+id/imgDetailPhoto"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
             android:src="@android:drawable/ic_menu_gallery" />
-    </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
         <TextView
             android:layout_width="wrap_content"
@@ -87,8 +96,8 @@
             android:id="@+id/mapDetail"
             android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_marginTop="20dp" />
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp" />
 
 
         <Button
