@@ -9,13 +9,13 @@ import retrofit2.http.POST
 import retrofit2.http.Path
 
 interface CarServices {
-    @GET("car")
+    @GET("items")
     fun getCars(): Call<List<Car>>
 
-    @POST ("car")
+    @POST ("items")
     fun saveCar(@Body car: Car): Call<Car>
 
-    @DELETE("car/{id}")
+    @DELETE("items/{id}")
     fun deleteCar(@Path("id") id: String): Call<Void>
 
 

@@ -12,7 +12,20 @@
           "package_name": "br.edu.utfpr.minha_app_decarros"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "843782249376-5qa0gff379aj2hlr3u823vpme7ba0bgn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.edu.utfpr.minha_app_decarros",
+            "certificate_hash": "df0019995a5b9a14a42f07ad890b609db94d9d60"
+          }
+        },
+        {
+          "client_id": "843782249376-1vjn4pdt3866kr36832omql39rpkq9qd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyB8o8XEJkgMYVxUb38UNU9N0LCJPr0oQhg"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "843782249376-1vjn4pdt3866kr36832omql39rpkq9qd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
